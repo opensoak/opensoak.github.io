@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #ccc;
+  font-family: 'Poiret One', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
