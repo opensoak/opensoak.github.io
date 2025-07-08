@@ -7,18 +7,53 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   color: white;
+  text-align: center;
 }
 
-.wrapper h1 {
-  font-size: 48px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeWrapper 1s ease-in-out both;
+}
+
+/* Fade-in animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
   font-weight: 700;
   margin: 0;
 }
 
-.wrapper p {
-  font-size: 18px;
+p {
+  font-size: 1.1rem;
   font-weight: 400;
-  margin-top: 12px;
+  margin-top: 0.8rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
