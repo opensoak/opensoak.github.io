@@ -1,25 +1,24 @@
-body {
+body, html {
   margin: 0;
-  background: #111;
-  color: #ccc;
+  padding: 0;
+  height: 100%;
+  background-color: #01fec7;
   font-family: 'Outfit', sans-serif;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
   text-align: center;
+  color: white;
 }
 
-main {
-  padding: 1rem;
+.wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
-}
-
-p {
-  font-size: 1.2em;
-  letter-spacing: 1px;
+.wrapper p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 12px;
 }
